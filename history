@@ -1,0 +1,8 @@
+cd /cvhci/temp/caschmidt
+mkdir visual_prompting && cd visual_prompting
+gdown 130vNSlqg3faHzVGGh_vkeUUh-2uVX3se
+wget https://heibox.uni-heidelberg.de/d/8088892a516d4e3baf92/files/?p=%2Fckpts%2Flast.ckpt
+wget https://heibox.uni-heidelberg.de/d/8088892a516d4e3baf92/files/?p=%2Fconfigs%2Fmodel.yaml
+cd /home/caschmidt/visual_prompting
+ln -s /cvhci/temp/caschmidt/visual_prompting/last.ckpt last.ckpt
+ln -s /cvhci/temp/caschmidt/visual_prompting/last.ckpt model.yaml

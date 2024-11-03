@@ -1290,7 +1290,7 @@ def get_vq_model(config_path=os.path.join(cwd, 'model.yaml'),
                  ckpt_path=os.path.join(cwd, "last.ckpt")):
     config = OmegaConf.load(config_path)
     model = VQModel(**config.model.params)
-    sd = torch.load(ckpt_path, map_location="cpu")["state_dict"]
+    sd = torch.load(ckpt_path, map_location="cpu", weights_only=True)["state_dict"]
     missing, _ = model.load_state_dict(sd, strict=False)
     print("Missing VQGAN keys:", missing)
     return model.eval()
