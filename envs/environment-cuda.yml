@@ -1,0 +1,21 @@
+name: visualprompting
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - nvidia/label/cuda-11.8.0::cuda-toolkit
+  - python
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - tqdm
+  - matplotlib
+  - pillow
+  - gdown
+  - timm
+  - pip
+  - pip:
+    - pytorch_lightning
+  - einops
+  - omegaconf
+

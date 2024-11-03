@@ -1,0 +1,19 @@
+name: visualprompting
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python
+  - cpuonly
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - tqdm
+  - matplotlib
+  - pillow
+  - gdown
+  - timm
+  - pip
+  - pip:
+    - pytorch_lightning
+  - einops
+  - omegaconf
